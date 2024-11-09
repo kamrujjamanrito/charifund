@@ -1,0 +1,110 @@
+/* ==============
+ ========= css table of contents =========
+
+ * template name: Alexis
+ * version: 1.0
+ * description: Real Estate Html5 Template
+ * author: Expert-Themes
+ * author-url: https://themeforest.net/user/expert-themes
+
+ 01. abstracts
+     1.01 --> mixins
+     1.02 --> variables
+    
+ 02. base
+     2.01 --> reset
+     2.02 --> typography
+     2.03 --> global
+
+ 03. components
+     3.01 --> buttons
+     3.02 --> forms
+     3.03 --> preloader
+
+ 04. layout
+     4.01 --> header
+     4.02 --> sidebar
+     4.03 --> banner
+     4.04 --> footer
+     4.05 --> dark body and rtl
+
+ 05. sections
+     5.01 --> partner
+     5.02 --> difference
+     5.03 --> help
+     5.04 --> properties
+     5.05 --> counter
+     5.06 --> explore
+     5.07 --> testimonial
+     5.08 --> team
+     5.09 --> blog
+     5.10 --> contact
+     5.11 --> coming soon
+     5.12 --> error
+     5.13 --> authentication
+     5.14 --> privacy
+     5.15 --> who
+     5.16 --> color switcher
+
+    ==================================
+============== */
+
+// bootstrap five css
+@import url("../css/bootstrap.min.css");
+// font awesome six css
+@import url("../fonts/css/all.min.css");
+// custom icons css
+// flag icons css
+@import url("../fonts/css/flag-icons.min.css");
+@import url("../fonts/css/charifund.css");
+// magnific popup css
+@import url("../css/magnific-popup.css");
+// aos css
+@import url("../css/aos.css");
+// nice select css
+@import url("../css/nice-select.css");
+// odometer css
+@import url("../css/odometer.css");
+// swiper slider css
+@import url("../css/swiper-bundle.min.css");
+
+// abstract styles
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+// base styles
+@import "./base/reset";
+@import "./base/typography";
+@import "./base/global";
+
+// component styles
+@import "./components/buttons";
+@import "./components/forms";
+@import "./components/preloader";
+
+// layout styles
+@import "./layout/header";
+@import "./layout/banner";
+@import "./layout/footer";
+
+// section styles
+@import "./sections/partner";
+@import "./sections/difference";
+@import "./sections/help";
+@import "./sections/cause-slider";
+@import "./sections/cta-section";
+@import "./sections/team";
+@import "./sections/community";
+@import "./sections/testimonial";
+@import "./sections/blog";
+@import "./sections/award";
+@import "./sections/faq";
+@import "./sections/overview";
+@import "./sections/donation";
+@import "./sections/counter";
+@import "./sections/event";
+@import "./sections/contact";
+@import "./sections/shop";
+@import "./sections/error";
+@import "./sections/coming-soon";
+@import "./sections/color-switcher";

@@ -1,0 +1,83 @@
+/* ==== 
+ --------- (5.12) error section styles start ---------
+ ==== */
+
+
+ .error {
+  padding: 100px 0px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  h2,
+  h3 {
+    font-weight: 900;
+    color: var(--black);
+  }
+
+  h2 {
+    line-height: 1;
+    color: var(--black);
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+
+  .btn--primary {
+    padding: 18px 40px;
+    border-radius: 60px;
+    font-weight: 700;
+    gap: 8px;
+    &::before,
+    &::after {
+      border-radius: 0px;
+    }
+    i {
+      transform: rotate(-45deg);
+      transition: transform 0.5s ease, color 0s ease;
+      font-size: 18px;
+    }
+    &:hover {
+      i {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  .spade {
+    position: absolute;
+    bottom: -5%;
+    inset-inline-start: 10%;
+    z-index: -1;
+    img {
+        max-width: 20vw;
+    min-width: 60px;
+    animation: pulse 4s infinite ease-in-out;
+    }
+  }
+
+  .spade-green {
+    position: absolute;
+    top: 18%;
+    inset-inline-end: 3%;
+    z-index: -1;
+    img {
+      max-width: 5vw;
+      min-width: 30px;
+      animation: pulse 4s infinite ease-in-out;
+    }
+  }
+ }
+
+/* ==== 
+ --------- (5.12) error section styles end ---------
+ ==== */

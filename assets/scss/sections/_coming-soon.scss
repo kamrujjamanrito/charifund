@@ -1,0 +1,327 @@
+/* ==== 
+ --------- (5.11) coming soon section styles start ---------
+ ==== */
+
+.coming-soon {
+  padding: 100px 0px;
+  min-height: 100vh;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    inset-block: 0px;
+    inset-inline-start: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      -104deg,
+      rgba(12, 26, 23, 0) 1.9%,
+      rgba(9, 31, 27, 0.08) 9.94%,
+      rgba(9, 31, 27, 0.17) 22.52%,
+      rgba(9, 31, 27, 0.37) 36.84%,
+      rgba(9, 31, 27, 0.67) 56.36%,
+      #091f1b 79.8%,
+      #091f1b 95.2%,
+      rgba(9, 31, 27, 0.91) 103.44%
+    );
+    z-index: -3;
+  }
+
+  .logo {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .content {
+    h3 {
+      font-weight: 700;
+      color: var(--white);
+      text-align: center !important;
+    }
+    h6 {
+      color: var(--white);
+      margin-top: 16px;
+    }
+
+    form {
+      width: 100%;
+      max-width: 600px;
+      margin-inline: auto;
+    }
+
+    .form-group {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background-color: var(--white);
+      padding: 0px 24px;
+      border-radius: 10px;
+      margin-top: 40px;
+      input {
+        flex-grow: 1;
+        background-color: transparent;
+        padding: 16px 0px;
+        color: var(--black);
+      }
+
+      button {
+        color: var(--black);
+        font-size: 20px;
+        &:hover {
+          color: var(--quaternary-color);
+        }
+      }
+    }
+  }
+
+  .time-counter {
+    position: relative;
+  }
+
+  .time-counter .time-countdown1 {
+    position: relative;
+    margin-block: 120px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .time-counter .time-countdown1 .counter-column {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 180px;
+    height: 180px;
+    font-size: 20px;
+    line-height: 1em;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    z-index: 7;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+    background-color: rgba(70, 70, 70, 0.8);
+    margin: 0 15px 20px;
+  }
+
+  .time-counter .time-countdown1 .counter-column .count {
+    position: relative;
+    display: block;
+    font-size: 72px;
+    line-height: 1;
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  .clock-wrapper {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    margin-top: -145px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.4);
+    transform: scale(2);
+  }
+
+  .clock-base {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+
+  .click-indicator {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    width: 230px;
+    height: 230px;
+  }
+
+  .click-indicator div {
+    position: absolute;
+    width: 2px;
+    height: 4px;
+    margin: 113px 114px;
+  }
+
+  .click-indicator div > span {
+    height: 5px;
+    width: 5px;
+    background-color: #ffffff;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: -1px;
+    margin-top: -1px;
+  }
+
+  .click-indicator div:nth-child(1) {
+    transform: rotate(30deg) translateY(-120px);
+  }
+
+  .click-indicator div:nth-child(2) {
+    transform: rotate(60deg) translateY(-120px);
+  }
+
+  .click-indicator div:nth-child(3) {
+    transform: rotate(90deg) translateY(-120px);
+    background-color: #f7941d;
+  }
+
+  .click-indicator div:nth-child(4) {
+    transform: rotate(120deg) translateY(-120px);
+  }
+
+  .click-indicator div:nth-child(5) {
+    transform: rotate(150deg) translateY(-120px);
+  }
+
+  .click-indicator div:nth-child(6) {
+    transform: rotate(180deg) translateY(-120px);
+    background-color: #f7941d;
+  }
+
+  .click-indicator div:nth-child(7) {
+    transform: rotate(210deg) translateY(-120px);
+  }
+
+  .click-indicator div:nth-child(8) {
+    transform: rotate(240deg) translateY(-120px);
+  }
+
+  .click-indicator div:nth-child(9) {
+    transform: rotate(270deg) translateY(-120px);
+    background-color: #f7941d;
+  }
+
+  .click-indicator div:nth-child(10) {
+    transform: rotate(300deg) translateY(-120px);
+  }
+
+  .click-indicator div:nth-child(11) {
+    transform: rotate(330deg) translateY(-120px);
+  }
+
+  .click-indicator div:nth-child(12) {
+    transform: rotate(360deg) translateY(-120px);
+    background-color: #f7941d;
+  }
+
+  .clock-hour {
+    position: absolute;
+    z-index: 2;
+    top: 75px;
+    left: 123px;
+    width: 4px;
+    height: 65px;
+    background-color: #f7941d;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    transform-origin: 2px 50px;
+    transition: 0.5s;
+    animation: rotate-hour 43200s linear infinite;
+  }
+
+  .clock-minute {
+    position: absolute;
+    z-index: 3;
+    top: 55px;
+    left: 123px;
+    width: 4px;
+    height: 85px;
+    background-color: #f7941d;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    transform-origin: 2px 70px;
+    transition: 0.5s;
+    animation: rotate-minute 3600s linear infinite;
+  }
+
+  .clock-second {
+    position: absolute;
+    z-index: 4;
+    top: 15px;
+    left: 124px;
+    width: 2px;
+    height: 130px;
+    background-color: #ffffff;
+    opacity: 0.9;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    transform-origin: 1px 110px;
+    transition: 0.5s;
+    animation: rotate-second 60s linear infinite;
+  }
+
+  .clock-second:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -3px;
+    bottom: 16px;
+    width: 8px;
+    height: 8px;
+    background-color: #222222;
+    border: solid 2px #222222;
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .clock-center {
+    position: absolute;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    top: 50px;
+    left: 50px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+  }
+
+  .clock-center:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 65px;
+    background-color: #ddd;
+    border-radius: 50%;
+  }
+
+  .banner-bg {
+    position: absolute;
+    inset: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -4;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .parallax-image-wrap,
+    .parallax-image-inner {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      inset: 0px;
+    }
+  }
+}
+
+/* ==== 
+ --------- (5.11) coming soon section styles end ---------
+ ==== */
